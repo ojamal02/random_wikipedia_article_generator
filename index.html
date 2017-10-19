@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Random Wikipedia Article </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link media="all" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <div class="form-box">
+    <form action="javascript: doSearch()">
+      <div class="form-group">
+        <div class="col-md-offset-1 col-md-3">
+          <button onclick="window.open('https://en.wikipedia.org/wiki/Special:Random', 'blank')" class="btn-block">Random Wikipedia Article</button>
+        </div>
+        <div class="col-md-4">
+          <input type="search" id="search" class="form-control" oninput="suggest()">
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn-block">Search</button>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="box">
+  </div>
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
